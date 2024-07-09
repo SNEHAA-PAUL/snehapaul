@@ -231,15 +231,15 @@ header p:hover{
     width: 100vw;
     height: 100vh;
     background-image: url("geometric-background-soft-color-background-design_1067658-83.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
-    padding-top: 50px;
+
 }
 .accounts{
-    position: absolute;
     bottom: 3rem;
     left: 15%;
     display: flex;
