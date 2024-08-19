@@ -1,39 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>PROJECTS - Sneha Paul</title>
+    <link rel="stylesheet" href="./about.css">
 </head>
-<body>
-    <div class="page3">
-        <div class="c1">
-        <h2><u><span style="margin: 50;">PROJECTS</span></u></h2>
-        <br>
-            <ul class="c2">
-                <li class="c2" >
-                    PHISHING DETECTION BASED ON MACHINE LEARNING.
-                <p class="c2" style="font-size: 22px;word-spacing: 20px; font-weight: 100; ">Developed a machine learning model with supervised learning methods to identify phishing websites.
-                    Classified websites as phishing or authentic by using features like SSL certificate, domain age, and URL
-                    length.
-                    Achieved 98% in phishing detection by employing thorough model evaluation and training using logistic
-                    regression and multinomial-nb. </p>
-                </li>
-                <li class="c2">
-                    BRAIN TUMOR DETECTION USING DEEP LEARNING.
-                <p class="c2" style="font-size: 22px;word-spacing: 20px; font-weight: 100;">Implemented a deep learning model to classify brain MRI images for tumor detection.
-                    Preprocessed medical images and applied convolutional neural networks (CNNs) for feature extraction.
-                    Evaluated model performance and achieved 92% in tumor detection, aiding in early diagnosis and
-                    treatment planning. </p>
-                </li>
-            </ul>
-            </div>
-        <div class="c3">
-            <form action="index.html">
-                <button class="back1" style="font-size:20px ;">Go To Home</button>
-            </form>
-        </div>    
-    </div>
+
+<body class="about_body">
+    <main>
+            <header class="about_header">
+                <h1>Welcome to my Project Portfolio🙂. </h1>
+            </header>
+            <section class="about">
+            <!-- <p class="pro_p">Welcome to my project portfolio. Here, you’ll find a collection of my recent work, showcasing my skills
+                in Python full-stack web development and other technologies.</p> -->
+
+            <h2 class="pro_h2">🔹Brain Tumor Detection Using Deep Learning</h2>
+            <p>As the team coordinator, I facilitated the project workflow and ensured cohesive teamwork. We began by collecting the necessary 
+                data and conducting a comparative study on four neural networks: VGG16, VGG19, DenseNet121, and ResNet50. After preprocessing 
+                the data, we performed segmentation using the watershed segmentation algorithm and applied Otsu's binary thresholding, along 
+                with other morphological operations and edge detection to enhance the images.
+                <br>
+                Among the evaluated networks, DenseNet121 delivered the highest accuracy, while ResNet50 had the lowest. Based on our findings, 
+                we developed a new efficient model called Genesis, introducing spatial attention and channel attention mechanisms to improve 
+                feature extraction. Genesis achieved impressive results, with a training accuracy of 100% and a testing accuracy of 93%.</p>
+            <p><strong>Future Goals : </strong>Our future goals for this project include improving data diversity, enhancing small lesion detection, exploring multi-task learning, integrating clinical information, validating in real-world settings, and enabling continual learning. Addressing these areas will advance the model's performance and practical utility, benefiting clinicians and patients in diagnosing and treating brain tumors.</p>
+            <p><strong>Technologies Used :</strong> Python, VGG16, VGG19, DenseNet121, ResNet50, Watershed Segmentation, Otsu's Binary 
+                Thresholding, Morphological Operations, Edge Detection</p>
+            <p><strong>Challenges : </strong>During the project, I ensured open communication and identified tasks crucial for prioritizing deliverables, helping us meet tight deadlines.</p>
+            <p><strong>Teamwork : </strong>I actively participated in brainstorming sessions, supported my teammates, and contributed ideas and skills to achieve our goals. This reinforced the value of collective effort and effective communication.</p>
+            
+            
+            
+            <h2 class="pro_h2">🔹Phishing Detection Using Machine Learning</h2>
+            <p>As the team leader, I spearheaded the project, ensuring smooth coordination and timely delivery. Our project involved 
+                collecting data from Kaggle and performing feature extraction, focusing on four key features from the URL: Address Bar 
+                Features, Abnormal Features, HTML-based Features, and Domain-based Features. We utilized a combination of URL parsing 
+                libraries (like URLParse in Python) and HTML parsing libraries (like BeautifulSoup in Python) for feature extraction 
+                from URLs and HTML content.
+                <br>
+                We cleaned the data to remove and identify null values and carried out feature engineering. For classification, we chose an 
+                ensemble learning technique, using SVM-RBF and XG-Boost due to their superior performance and robustness. XG-Boost, with its 
+                regularization parameter reducing variance and improving accuracy, achieved a high accuracy rate of about 97%. Additionally, 
+                we used logistic regression and multinomial-nb for model evaluation and training.</p>
+            <p><strong>Technologies Used : </strong>Python, URLParse, BeautifulSoup, SVM-RBF, XG-Boost, Logistic Regression, Multinomial 
+                Naive Bayes</p>
+            <p><strong>Challenges : </strong>In this critical project with tight deadlines, I identified unseen issues and prioritized 
+                deliverables by ensuring open communication with the team. This proactive approach enabled us to deliver the project on time.</p>
+            <p><strong>Leadership : </strong>I effectively guided the team through various challenges, delegated tasks, ensured clear 
+                communication, and maintained high morale. This experience underscored the importance of collaboration and strategic planning.</p>
+        </section> 
+
+        <section class="projects-conclusion">
+            <p>Thank you for exploring my projects. If you have any questions or would like to discuss my work further,
+                feel free to <a style="color: red;" href="contact.html">contact me</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sneha Paul. All rights reserved.</p>
+    </footer>
+
+    <form action="index.html">
+        <button style="font-size:20px ;">Go To Home</button>
+    </form>
+
 </body>
+
 </html>
