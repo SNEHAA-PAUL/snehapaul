@@ -112,7 +112,7 @@ section {
 }
 
 .home-text span {
-    padding: 5px 25px;
+    padding: 5px 30px;
     background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
     box-shadow: 0px 20px 40px #00000070;
     border: 1px solid #3b3b3b;
@@ -121,6 +121,7 @@ section {
     font-weight: 700;
     font-size: 15px;
     text-transform: uppercase;
+    word-spacing: 5px;
 }
 
 .home-text h1 {
@@ -437,7 +438,7 @@ section {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 8px;
     background: #333;
     color: var(--main-color);
     position: fixed;
@@ -484,41 +485,142 @@ strong{
 
 
 
-/* ABOUT PAGE */
-/* .about_body{
-    background-color: #29261f;
-}
-.about_header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.about {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    padding: 70px 25px;
+/* the popup */
+
+
+.blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
 }
 
-.about h2 {
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    max-width: 90%;
+    padding: 30px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    background: #19191b; 
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    z-index: 1000;
+    text-align: center;
+}
+
+#popup.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+#popup h2 {
+    color: #ffae00;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+#popup p:first-of-type {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+#popup p {
+    color: #ffffff;
+    margin: 5px 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+
+
+
+
+
+/* "Go to Contact Page" button */
+.contact-page-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffae00;
+    color: #19191b;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-page-btn:hover {
+    background-color: #e69500;
+    transform: translateY(-2px);
+}
+
+#popup a.cont_a {
+    color: #ffae00; 
+    text-decoration: none;
+}
+
+#popup a.cont_a:hover {
+    text-decoration: underline;
+}
+
+.close-btn {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #ffae00;
+    color: #19191b;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: rotate(90deg);
+}
+
+.close-btn:focus {
+    outline: none;
+}
+
+
+
+
+
+/* go to home button */
+.home-button {
+    position: fixed; 
+    bottom: 50px; 
+    right: 20px;
+    background: #141414;
+    border: 2px solid #141414;
     color: var(--text-color);
-    font-weight: 700;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-size: var(--big-font);
-    margin: 23px 0;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.about p {
-    font-size: var(--p-font);
-    color: var(--text-color);
-    line-height: 30px;
-    margin-bottom: 30px;
+.home-button:hover {
+    /* transform: translateY(-5px); */
+    /* background: transparent; */
+    color: #ffae00;
+    border-color: #fff;   
 }
 
-.about_ul li{
-    padding-bottom: 10px;
-    text-decoration: ;
-} */
